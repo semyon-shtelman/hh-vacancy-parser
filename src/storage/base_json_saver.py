@@ -9,12 +9,21 @@ class BaseStorage(ABC):
 
     @abstractmethod
     def add_vacancy(self, data: Dict) -> None:
+        """
+        Добавляет вакансию в хранилище.
+        """
         pass
 
     @abstractmethod
     def get_vacancy(self, keyword: str | None = None) -> List[Dict]:
+        """
+        Получает вакансии из хранилища.
+        """
         pass
 
     @abstractmethod
     def delete_vacancy(self, data: Dict) -> None:
+        """
+        Удаляет вакансию из хранилища
+        """
         pass
